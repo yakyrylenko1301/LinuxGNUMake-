@@ -1,0 +1,11 @@
+all: main.o src1.o
+	gcc $? -o exe_from_mk3
+
+main.o: main.c
+	gcc -c $?
+
+src1.o: src1.c
+	gcc -c $?
+
+clean:
+	rm -rf exe_from_mk3 *.o

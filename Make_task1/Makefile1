@@ -1,0 +1,5 @@
+all: main.c src1.c src1.h
+	gcc main.c src1.c -o exe_from_mk1
+
+clean:
+	rm -rf exe_from_mk1 *.o
